@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tetiary: #9CA3AF;
+  --always-white: #9CA3AF;
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
+}
+
+html {
+  background-color: var(--background-primary);
+
+  font-family: "Inter", serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 40rem;
+  margin: auto;
+}
+
+header {
+  margin: 27px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+}
+
+strong {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 26.67px;
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin-top: 62px;
+  margin-left: 0;
+  width: 4rem;
+}
+
+a:hover {
+  color: var(--color-brand-hover);
+  transition: 0.5s linear;
+}
+
+.ancora h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 16px;
+}
+
+.input-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.input-group input {
+  padding: 11px 20px;
+  width: 451px;
+  border: 2px solid var(--border-primary);
+  border-radius: 9px;
+  color: var(--always-white);
+  outline: none;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.input-group input:hover {
+  border: 2px solid var(--border-hover);
+}
+
+.input-group input:focus {
+  border-color: var(--color-brand);
+  color: var(--content-primary);
+}
+
+.input-group button {
+  width: 160px;
+  padding: 6px;
+  background-color: var(--color-brand);
+  color: var(--background-secondary);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: var(--color-brand-hover);
+  transition: 0.5s linear;
+}
+
+ul {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+
+li {
+  background: var(--background-secondary);
+  display: flex;
+  padding: 12px 12px;
+  width: 100%;
+  max-width: 627px;
+  margin-top: 12px;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+li p {
+  font-weight: 500;
+}
+
+li ion-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+li ion-icon:hover {
+  color: var(--color-danger);
+  transition: linear 0.5s;
+}
+
+li input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.alert {
+  background: var(--color-danger);
+  color: white;
+  display: flex;
+  padding: 12px 12px;
+  width: 100%;
+  max-width: 627px;
+  border-radius: 8px;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.alert ion-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.alert #delete {
+  cursor: pointer;
+}
+
+.alert div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.alert div ion-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox-label span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.checkbox-label span:hover {
+  border: 1px solid var(--border-hover);
+}
+
+input[type="checkbox"]:checked + .checkbox-label span {
+  background-color: var(--color-brand);
+}
+
+input[type="checkbox"]:checked + .checkbox-label span::after {
+  content: "✓";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: white;
+}

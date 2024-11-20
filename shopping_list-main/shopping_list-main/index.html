@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="header-logo">
+          <img src="assets/logo.svg" alt="" />
+          <strong>Lista de Compras Maycon</strong>
+        </div>
+      </header>
+      <div class="ancora">
+        <a href="#">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <p>Voltar</p>
+        </a>
+        <h1>Compras da semana</h1>
+      </div>
+      <form>
+        <div class="input-group">
+          <input
+            type="text"
+            id="input"
+            placeholder="Adicione um novo item"
+            autocomplete="off"
+          />
+          <button type="submit">Adicionar item</button>
+        </div>
+        <div>
+          <ul id="list"></ul>
+        </div>
+      </form>
+      <footer hidden>
+        <div class="alert">
+          <div>
+            <ion-icon name="alert-circle"></ion-icon>
+            <span id="alertMessage"></span>
+          </div>
+          <ion-icon name="close-outline" id="delete"></ion-icon>
+        </div>
+      </footer>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
